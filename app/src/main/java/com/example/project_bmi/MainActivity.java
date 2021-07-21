@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
             double weight = Double.parseDouble(editW.getText().toString());
             double height = Double.parseDouble(editH.getText().toString());
             Intent intent = new Intent(getApplicationContext(), ResultActivity.class);
-            Intent.putExtra("weight", weight);
-            Intent.putExtra("height", height);
+            intent.putExtra("weight", weight);
+            intent.putExtra("height", height);
             startActivity(intent);
         }
     };

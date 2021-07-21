@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Html;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -14,8 +15,8 @@ public class ResultActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
         ImageView imgv = findViewById(R.id.imgv);
-        ImageView text1 = findViewById(R.id.text_result);
-        ImageView text2 = findViewById(R.id.text_result2);
+        TextView text1 = findViewById(R.id.text_result);
+        TextView text2 = findViewById(R.id.text_result2);
         Intent intent = getIntent();
         double w = intent.getDoubleExtra("weight", 0);
         double h = intent.getDoubleExtra("height", 0);
@@ -44,6 +45,6 @@ public class ResultActivity extends AppCompatActivity {
             imgSrcId = R.drawable.BMI2;
         }
         imgv.setImageResource(imgSrcId);
-        text1.setText(bmiStr + "체중")
+        text1.setText(bmiStr + "체중");
     }
 }
