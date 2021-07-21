@@ -27,7 +27,6 @@
         android:layout_height="wrap_content"
         />
     <TextView
-        android:id="@+id/weight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_weight"
@@ -35,6 +34,7 @@
         android:textSize="15dp"
         android:textColor="#000000"/>
     <EditText
+        android:id="@+id/weight"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
@@ -54,6 +54,7 @@
         android:textSize="15dp"
         android:textColor="#000000"/>
     <EditText
+        android:id="@+id/height"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
